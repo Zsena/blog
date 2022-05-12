@@ -14,12 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
-
 
 Route::get('/rolam', function () {
     return view('about');
+});
+
+Route::get('/kapcsolat', function () {
+    return view('contact');
 });
 
 
